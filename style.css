@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 75px;
     background-color: #FFF; 
+    z-index: 2;
 }
 
 #menu button {
@@ -138,22 +139,69 @@ h2 {
     margin-top: 75px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create three equal columns that sits next to each other */
 .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
     padding: 0 4px;
 }
 
-.column img {
+#background {
+    background-color: #000;
     margin-top: 8px;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.title {
+    font-family: 'Playfair Display SC', serif;
+    color: #FFF;
+
+    pointer-events : none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h4 {
+    opacity: 0;
+    font-size: 25px;
+    margin-bottom: -1px;
+    transition: all 0.5s;
+}
+
+hr {
+    opacity: 0;
+    transition: all 0.5s;
+    width: 25px;
+}
+
+.title p {
+    opacity: 0;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.column img {
     width: 100%;
     box-sizing: border-box;
     vertical-align: middle;
+    cursor: default;
+} 
+
+.column img:hover {
+    opacity: .5;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+#background:hover .title h4, #background:hover .title p, #background:hover .title hr {
+    opacity: 1;
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
     .column {
         -ms-flex: 100%;
@@ -165,6 +213,7 @@ h2 {
 /*------------------------------------ CONTACT -----------------------------------------*/
 
 .contact {
+    padding-top: 50px;
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
@@ -177,8 +226,12 @@ h2 {
 }
 
 .contact_wrapper {
-    background-color: white;
     padding-top: 2px;
+}
+
+.contact_wrapper a {
+    text-decoration: none;
+    color: #000;
 }
 
 #footer img{
