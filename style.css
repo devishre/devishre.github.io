@@ -175,10 +175,14 @@ h2 {
 
 .contact {
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 
 .contact h3 {
     text-align: center;
+    letter-spacing: .5em;
+    font-weight: bold;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .contact_wrapper {
@@ -190,7 +194,8 @@ h2 {
     width: 70px;
     height: 70px;
     box-sizing: content-box;
-    padding: 20px 0;
+    padding-bottom: 30px;
+    padding-top: 50px;
 }
 
 #email p, #social p {
@@ -210,11 +215,12 @@ h2 {
 }
 
 #email {
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 #social img {
     width: 20px;
     height: 20px;
-    margin: 0 2px;
+    margin: 0 3px;
+    box-sizing: content-box;
 }
