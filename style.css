@@ -1,74 +1,64 @@
 body {
-  background-color: #f9f9f9;
-  margin: 0px;
-  width: 100%; 
-  height: 150%; /* testing scroll bar height */
+    margin: 0;
+    background-color: #f9f9f9;
+    height: 100%;
 }
 
-/* Menu */
+/*------------------------------------ MENU -----------------------------------------*/
 #menu {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 75px;
-  background-color: #FFF; 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: #FFF; 
 }
 
 #menu button {
-	background-color: transparent;
-	outline: none;
-	border: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 #menu img {
-	width: 50px;
-  height: 50px;
-  padding-top: 7px;
-  padding-left: 15px;
-  float: left;
+    width: 50px;
+    height: 50px;
+    padding-top: 7px;
+    padding-left: 15px;
+    float: left;
+    box-sizing: content-box;
 }
 
 .menu_wrapper {
-  float: right;
-  padding-right: 15px;
-}
-
-h2 {
-  float: left;
-  margin-left: 20px;
-  margin-top: 15px;
-
-  font-family: 'Playfair Display SC', serif;
-  font-size: 25px;
-  color: #000;
+    float: right;
+    padding-right: 15px;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 75px;
-  float: right; 
-  display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 75px;
+    float: right; 
+    display: inline;
 }
 
 li {
-  float: right;
-  height: 75px;
-  display: inline;
+    float: right;
+    height: 75px;
+    display: inline;
 }
 
 li a {
-  display: block;
-  padding: 17px 20px;
-  text-decoration: none;
-  color: #000; }
+    display: block;
+    padding: 17px 20px;
+    text-decoration: none;
+    color: #000; }
 
 li a p, .dropdown p {
-  text-align: center;
-  font-size: 11px;
-  font-family: futura-pt, sans-serif;
+    text-align: center;
+    font-size: 11px;
+    font-family: futura-pt, sans-serif;
 }
 
 .drop_butt {
@@ -77,17 +67,17 @@ li a p, .dropdown p {
 }
 
 li a:hover:not(.active), .dropdown:hover p {
-  font-weight: bold; 
+    font-weight: bold; 
 }
 
 .dropdown {
-	display: inline;
-	float: left;
-	height: 75px;
-  padding-top: 1px;
-  margin-right: 15px;
-  width: 120px;
-  text-align: right;
+    display: inline;
+    float: left;
+    height: 75px;
+    padding-top: 1px;
+    margin-right: 15px;
+    width: 120px;
+    text-align: right;
 }
 
 .dropdown-content {
@@ -95,6 +85,7 @@ li a:hover:not(.active), .dropdown:hover p {
     width: 120px;
     position: absolute;
     background-color: #D8D2CB;
+    opacity: 0.95;
     margin-top: -10px;
     z-index: 1;
 }
@@ -115,9 +106,115 @@ li a:hover:not(.active), .dropdown:hover p {
 }
 
 .dropdown-content a:hover {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .dropdown:hover {
     background-color: #D8D2CB;
+    opacity: 0.95;
+}
+
+h2 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+
+    font-family: 'Playfair Display SC', serif;
+    font-size: 25px;
+    color: #000;
+}
+
+/*------------------------------------ IMAGE GRID -----------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 75px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*------------------------------------ CONTACT -----------------------------------------*/
+
+.contact {
+    text-align: center;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.contact_wrapper {
+    background-color: white;
+    padding-top: 2px;
+}
+
+#footer img{
+    width: 70px;
+    height: 70px;
+    box-sizing: content-box;
+    padding: 20px 0;
+}
+
+#email p, #social p {
+    display: inline;
+}
+
+#space {
+    padding-left: 175px;
+}
+
+#images {
+    padding-left: 170px;
+}
+
+#social, #email {
+    padding: 20px 0;
+}
+
+#email {
+    padding-top: 70px;
+}
+
+#social img {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
 }
