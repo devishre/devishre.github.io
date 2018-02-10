@@ -112,7 +112,7 @@ li a:hover:not(.active), .dropdown:hover p {
 
 .dropdown:hover {
     background-color: #D8D2CB;
-    opacity: 0.95;
+    opacity: 0.80;
 }
 
 h2 {
