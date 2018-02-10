@@ -59,6 +59,7 @@ li a {
 li a p, .dropdown p {
     text-align: center;
     font-size: 11px;
+    letter-spacing: 0.25em;
     font-family: futura-pt, sans-serif;
 }
 
