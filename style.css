@@ -265,6 +265,6 @@ hr {
 #social img {
     width: 20px;
     height: 20px;
-    margin: 0 3px;
+    padding: 0 3px;
     box-sizing: content-box;
 }
