@@ -130,12 +130,11 @@ h2 {
 /*------------------------------------ CONTACT -----------------------------------------*/
 
 .contact {
-    padding-top: 120px;
+    padding-top: 150px;
     font-family: futura-pt, sans-serif;
     width: 30%;
-    padding-left: 5%;
-    background-color: blue;
-    display: inline-block;
+    float: left;
+    padding-left: 10%;
 }
 
 .contact h3 {
@@ -191,8 +190,53 @@ h2 {
 }
 
 /*------------------------------------ CONTACT FORM -----------------------------------------*/
-
 .form {
-    background-color: red;
+    float: left;
+    width: 45%;
+    padding-left: 5%;
+    font-family: futura-pt, sans-serif;
+    letter-spacing: .1em;
+    font-size: 13px;
+    margin-top: 130px;
+}
+.form p {
+    padding-top: 10px;
+}
+
+input {
+    width: 100%;
+    line-height: 2em;
+    outline: none;
+    font-family: futura-pt, sans-serif;
+}
+
+.name {
     display: inline-block;
+    width: 49.5%;
+}
+
+.name label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    font-family: futura-pt, sans-serif;
+}
+
+input[type=submit]{
+    margin-top: 25px;
+    width: 25%;
+    margin-left: 37.5%;
+    height: 50px;
+    font-family: futura-pt, sans-serif;
+    letter-spacing: .2em;
+    outline: none;
+    background-color: Transparent;
+    border-style: solid;
+    border-color: #555555;
 }
