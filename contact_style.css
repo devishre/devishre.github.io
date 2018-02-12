@@ -134,6 +134,8 @@ h2 {
     font-family: futura-pt, sans-serif;
     width: 30%;
     padding-left: 5%;
+    background-color: blue;
+    display: inline-block;
 }
 
 .contact h3 {
@@ -186,4 +188,11 @@ h2 {
     height: 20px;
     padding: 0 10px;
     box-sizing: content-box;
+}
+
+/*------------------------------------ CONTACT FORM -----------------------------------------*/
+
+.form {
+    background-color: red;
+    display: inline-block;
 }
