@@ -253,7 +253,7 @@ hr {
 }
 
 #images {
-    padding-left: 170px;
+    padding-left: 175px;
 }
 
 #social, #email {
@@ -267,6 +267,6 @@ hr {
 #social img {
     width: 20px;
     height: 20px;
-    padding: 0 3px;
+    padding: 0 10px;
     box-sizing: content-box;
 }
