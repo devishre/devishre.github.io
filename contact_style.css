@@ -4,6 +4,10 @@ body {
     height: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
 /*------------------------------------ MENU -----------------------------------------*/
 #menu {
     position: fixed;
@@ -31,7 +35,7 @@ body {
 
 .menu_wrapper {
     float: right;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 ul {
@@ -213,7 +217,7 @@ input {
 
 .name {
     display: inline-block;
-    width: 49.5%;
+    width: 49.7%;
 }
 
 .name label {
@@ -240,4 +244,22 @@ input[type=submit]{
     background-color: Transparent;
     border-style: solid;
     border-color: #555555;
+}
+
+@media (max-width: 1812px) {
+    .name {
+        width: 49.5%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .name {
+        width: 49.4%;
+    }
+}
+
+@media (max-width: 910px) {
+    .name {
+        width: 49.3%;
+    }
 }

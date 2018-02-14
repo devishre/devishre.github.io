@@ -4,6 +4,10 @@ body {
     height: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
 /*------------------------------------ MENU -----------------------------------------*/
 #menu {
     position: fixed;
