@@ -54,7 +54,8 @@ li a {
     display: block;
     padding: 17px 20px;
     text-decoration: none;
-    color: #000; }
+    color: #000; 
+}
 
 li a p, .dropdown p {
     text-align: center;
@@ -139,11 +140,22 @@ h2 {
     font-family: proxima-nova, sans-serif;
 }
 
-.info img {
+#fb {
     width: 8px;
     height: 17px;
     padding-top: 15px;
     opacity: .6;
+}
+
+a {
+    text-decoration: none;
+}
+
+#twitter {
+    width: 17px;
+    height: 17px;
+    padding-left: 10px;
+    opacity: .5;
 }
 
 .info p {
@@ -196,15 +208,16 @@ hr {
 
 .nav {
     float: left;
-    margin-top: 150px;
-    padding-left: 20px;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: futura-pt, sans-serif;
+    font-size: 13px;
+    text-align: center;
 }
 
 .nav a {
     text-decoration: none;
     color: black;
 }
+
 
 /*------------------------------------ CONTACT -----------------------------------------*/
 
