@@ -140,6 +140,11 @@ h2 {
     font-family: proxima-nova, sans-serif;
 }
 
+#descript {
+    height: 400px;
+    overflow: hidden;
+}
+
 #fb {
     width: 8px;
     height: 17px;
@@ -207,7 +212,6 @@ hr {
 /*------------------------------------ NAVIGATION -----------------------------------------*/
 
 .nav {
-    float: left;
     font-family: futura-pt, sans-serif;
     font-size: 13px;
     text-align: center;
