@@ -210,14 +210,6 @@ hr {
     opacity: 1;
 }
 
-/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-@media (max-width: 800px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-}
 
 /*------------------------------------ CONTACT -----------------------------------------*/
 
@@ -281,4 +273,19 @@ hr {
     height: 20px;
     padding: 0 10px;
     box-sizing: content-box;
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .contact {
+        padding-top: 100px;
+    }
+
 }
